@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
+    <title>TV Show Project | Hadiyah Lawal (HadiyahL)</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="root">
-    </div>
+    <header id="header">
+      <h1 class="title">Best tv series</h1>
+      <select name="select" id="selectEpisode" class="episodeSelector">
+        <option value="default">All Episodes</option>
+      </select>
+      <form action="">
+        <input type="text" class="search" placeholder="Search Episodes..." />
+      </form>
+      <span class="displaySearchResult"></span>
+    </header>
+    <div id="root"></div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
